@@ -54,6 +54,7 @@ For deployment, I created a Streamlit app that uses the lightweight SVD model. Y
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── Project_Notebook.ipynb              <- Narrative documentation of process in Jupyter notebook
 ├── MusicRecommenderPresentation.pdf    <- PDF version of project presentation
+├── Presentation_Vod.mp4                <- Vod of presenation, with demo of app
 ├── .gitignore                          <- Ignored files(all data, saved files.)
 |
 ├── data                                <- External/saved datasets. Some files in data saved for streamlit.
