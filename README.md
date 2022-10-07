@@ -1,6 +1,7 @@
 # Creating and Deploying a Song Recommendation System
 
-##[Try the app here!](https://mitchallison2-song-recommender-streamlitapp-tnfjie.streamlitapp.com/)
+## [Try the app here!](https://mitchallison2-song-recommender-streamlitapp-tnfjie.streamlitapp.com/)
+
 [song_recommender_app_demo.webm](https://user-images.githubusercontent.com/108199202/194585900-89e964ff-988a-4be5-90a2-6b7604e14449.webm)
 
 ## Project Overview:
