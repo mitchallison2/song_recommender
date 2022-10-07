@@ -1,5 +1,7 @@
 # Creating and Deploying a Song Recommendation System
 
+## [Try the app here!](https://mitchallison2-song-recommender-streamlitapp-tnfjie.streamlitapp.com/)
+
 [song_recommender_app_demo.webm](https://user-images.githubusercontent.com/108199202/194585900-89e964ff-988a-4be5-90a2-6b7604e14449.webm)
 
 ## Project Overview:
@@ -45,3 +47,51 @@ For deployment, I created a Streamlit app that uses the lightweight SVD model. Y
 5. The app recomputes the SVD matrix, including this new user and their song ratings.
 6. The app returns the top 10 recommended songs, sorted by how much the model thinks they will like the song.
 7. Users can clear their list to try adding different combinations of songs to see what the model recommends.
+
+## Repository Structure:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── Project_Notebook.ipynb              <- Narrative documentation of process in Jupyter notebook
+├── MusicRecommenderPresentation.pdf    <- PDF version of project presentation
+├── .gitignore                          <- Ignored files(all data, saved files.)
+|
+├── data                                <- External/saved datasets. Some files in data saved for streamlit.
+  └── rated_listens_10k.csv             <- Small model listens for streamlit.
+  └── song_table_10k.csv                <- Small song table for streamlit.
+|  
+├── Graphs                              <- Contains graphs and images used in README and Project_Notebook
+  └── MAE_GSCV.jpg                      <- GSCV results: MAE metrics
+  └── RMSE_GSCV.jpg                     <- GSCV results: RMSE metrics
+  └── Song_play_distribution.jpg        <- Shows distribution of song plays
+  └── file_size.jpg                     <- unused. shows size of data
+  └── frequency_plays.jpg               <- shows frequency of plays, unedited
+  └── frequency_plays2.jpg              <- shows frequency of plays, max=100
+  └── frequency_plays_engineered.jpg    <- shows frequency of plays, engineered ratings
+  └── listenbrainz_schema.png           <- schema of listenbrainz api
+|  
+├── streamlit                           <- Contains streamlit files
+  └── app.py                            <- deployment application on streamlit
+  └── requirements.txt                  <- install requirements for streamlit
+  ├── data                              <- Contains data for streamlit
+    └── rated_listens_10k.csv           <- Small model listens for streamlit.
+    └── song_table_10k.csv              <- Small song table for streamlit.
+|
+├── Create_ratings1.ipynb               <- 1st attempt at creating ratings from listens
+├── Create_ratings2.ipynb               <- 2nd attempt at creating ratings from listens
+├── Create_ratings3.ipynb               <- 3rd attempt at creating ratings from listens
+|
+├── Data_prep1.ipynb                    <- getting data from query, saving data
+├── EDA_songclass.ipynb                 <- Attempt at using a custom class for profiles/songs, EDA of data
+├── streamlit_prep.ipynb                <- preparing data for streamlit
+|
+├── baseline.ipynb                      <- creating baseline model
+├── FSM1.ipynb                          <- 1st attempt at creating FSM
+├── FSM2.ipynb                          <- 2nd attempt at creating FSM
+├── GS1.ipynb                           <- 1st attempt at grid-searching
+├── GS2.ipynb                           <- 2nd attempt at grid-searching
+├── GS3.ipynb                           <- 3rd attempt at grid-searching
+├── Final_model.ipynb                   <- Creating final model
+
+
+```
