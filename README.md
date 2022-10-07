@@ -7,6 +7,7 @@ Using the CRISP-DM model, I created and deployed a music recommendation system. 
 
 ## Business Problem:
 ![streaming_money](https://www.garyfox.co/wp-content/uploads/2019/12/music-streaming-makes-money.png.webp)
+
 There is a lot of money in streaming services. In the US alone there are more than 82M subscribers to music streaming services, with an average user listening to 75 minutes of music every day. Although most users have a core set of songs that they listen to, keeping listeners interested with new music options are critical for these services success. The hard part is finding music that works with every individual, as not everyone listens to the same music. Therefore, a music recommender system is one of the most important aspects for these companies to have working.
 
 On a personal note, I listen to a LOT of music: I've been in Spotify's top 1% of listeners by time for the past two years, according to their end of year 'Wrapped'. I love finding new music to share with my friends, and my friends have a lot of varied tastes so it's important to me to be able to accomidate all of their tastes. I was hoping to create a tool to help me do just that.
