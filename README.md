@@ -44,3 +44,4 @@ For deployment, I created a Streamlit app that uses the lightweight SVD model. Y
 4. User hits the `RECOMMEND SONGS` button.
 5. The app recomputes the SVD matrix, including this new user and their song ratings.
 6. The app returns the top 10 recommended songs, sorted by how much the model thinks they will like the song.
+7. Users can clear their list to try adding different combinations of songs to see what the model recommends.
