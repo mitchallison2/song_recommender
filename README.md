@@ -20,7 +20,7 @@ All data was sourced from [ListenBrainz](https://listenbrainz.org/) through [Goo
 4. There are 149 million rows to query from the years 2005 to 2018: I was only able to use 37 million rows from 2016-2018 due to computational limits.
 5. There are no ratings contained in a `listen`.
 
-If we look at the frequency that users listen to a song, 51% of the time a user will only listen to a song a single time. It doesn't make sense to recommend a song that you've listened to once. Using this approach, I was able to create an explicit rating for every user for every song they a `listen`s for, from 1-10. I called these rated transformations `plays`.
+If we look at the frequency that users listen to a song, 51% of the time a user will only listen to a song a single time. It doesn't make sense to recommend a song that you've listened to once. Using this approach, I was able to create an explicit rating for every user for every song they have a `listen`s for, from 1-10.
 
 ![listen_distribution](./Graphs/frequency_plays.jpg)
 ![play_distribution](./Graphs/frequency_plays_engineered.jpg)
@@ -44,3 +44,4 @@ For deployment, I created a Streamlit app that uses the lightweight SVD model. Y
 4. User hits the `RECOMMEND SONGS` button.
 5. The app recomputes the SVD matrix, including this new user and their song ratings.
 6. The app returns the top 10 recommended songs, sorted by how much the model thinks they will like the song.
+7. Users can clear their list to try adding different combinations of songs to see what the model recommends.
