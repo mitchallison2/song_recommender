@@ -163,6 +163,8 @@ __pycache__/
 
 # Photo data
 *.jpeg
+*.jpg
+*.png
 
 # Logs folder
 logs/*
