@@ -5,7 +5,7 @@
 [song_recommender_app_demo.webm](https://user-images.githubusercontent.com/108199202/194585900-89e964ff-988a-4be5-90a2-6b7604e14449.webm)
 
 ## Project Overview:
-Using the CRISP-DM model, I created and deployed a music recommendation system. By quering open-source, unrated `listens` from [ListenBrainz](https://listenbrainz.org/) through Google BigQuery, I was able to work with 37 million rows on Google Colab. I transformed the frequency of plays per profile per song to create an explicit rating system. Then I was able to create and deploy a lightweight collaborative SVD model for people to find new music. Users would simply need to pick the artist, song, and rating for several songs of their choice to get personalized recommmendations for their tastes.
+Using the CRISP-DM model, I created and deployed a music recommendation system. By querying open-source, unrated `listens` from [ListenBrainz](https://listenbrainz.org/) through Google BigQuery, I was able to work with 37 million rows on Google Colab. I transformed the frequency of plays per profile per song to create an explicit rating system. Then I was able to create and deploy a lightweight collaborative SVD model for people to find new music. Users would simply need to pick the artist, song, and rating for several songs of their choice to get personalized recommendations for their tastes.
 
 ## Business Problem:
 ![streaming_money](https://www.garyfox.co/wp-content/uploads/2019/12/music-streaming-makes-money.png.webp)
